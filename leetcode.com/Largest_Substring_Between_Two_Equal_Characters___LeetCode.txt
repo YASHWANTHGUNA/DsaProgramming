@@ -1,5 +1,17 @@
 class Solution {
     public int maxLengthBetweenEqualCharacters(String s) {
+        int maxLength = -1;
         
-    }
-}
+      
+        for (char c = 'a'; c <= 'z'; c++) {
+            int left = s.indexOf(c);
+            int right = s.lastIndexOf(c);
+            
+           
+            if (left != -1 && right != -1 && right > left) {
+              
+                int currentLen = right - left - 1;
+                maxLength = Math.max(maxLength, currentLen);
+            }
+        }
+        
