@@ -9,3 +9,15 @@
 ```
         Scanner scanner = new Scanner(System.in);
 ```
+
+---
+
+### Submitted: Aug 11, 2026, 10:39 PM
+
+- **Language:** Unknown
+- **Time Complexity:** O(1) (estimated)
+- **Space Complexity:** O(1) (estimated)
+
+```
+        Scanner scanner = new Scanner(System.in);
+```
