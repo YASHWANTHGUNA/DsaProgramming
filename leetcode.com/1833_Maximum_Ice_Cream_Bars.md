@@ -32,3 +32,38 @@ class Solution {
     }
 }
 ```
+
+---
+
+### Submitted: Sep 4, 2026, 08:33 PM
+
+- **Language:** Java
+- **Time Complexity:** O(n) (estimated)
+- **Space Complexity:** O(1) (estimated)
+
+```java
+class Solution {
+    public int maxIceCream(int[] costs, int coins) {
+        int n = costs.length; 
+        int count = 0; 
+        Arrays.sort(costs); 
+        int i = 0; 
+        // if(costs[0] > coins) {
+        //     return 0; 
+        // }
+        
+            
+            while(i < n && coins >= costs[i]) {
+               
+                    coins -= costs[i];
+                    count++; 
+                    
+                    i++;
+                
+            }
+        
+        return count; 
+        
+    }
+}
+```
