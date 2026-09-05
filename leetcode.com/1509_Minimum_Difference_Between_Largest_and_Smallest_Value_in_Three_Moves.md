@@ -33,3 +33,39 @@ class Solution {
     }
 }
 ```
+
+---
+
+### Submitted: Sep 5, 2026, 01:44 PM
+
+- **Language:** Java
+- **Time Complexity:** O(n) (estimated)
+- **Space Complexity:** O(1) (estimated)
+
+```java
+class Solution {
+    public int minDifference(int[] nums) {
+        int n = nums.length; 
+        Arrays.sort(nums);
+        int answer = Integer.MAX_VALUE; 
+        
+        if(n <= 4) {
+            return 0; 
+        }
+        for(int left = 0; left <= 3; left++) {
+                int right = 3-left;  
+                int min = nums[left]; 
+                int max = nums[n-1-right]; 
+                int difference = max-min;
+                answer = Math.min(answer, difference); 
+               
+            
+            
+
+
+        }
+        return answer; 
+        
+    }
+}
+```
